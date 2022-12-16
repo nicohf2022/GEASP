@@ -4,5 +4,85 @@
         <name>Library</name>
     </assembly>
     <members>
+        <member name="T:Full_GRASP_And_SOLID.Library.Building">
+            <summary>
+             Se crea la clase Building para que se encargue de conocer los detalles de la construccion y se cumpla con el principio SRP.
+            </summary>
+        </member>
+        <member name="M:Full_GRASP_And_SOLID.Library.Building.#ctor(System.String)">
+            <summary>
+            Se crea el constructor para que se encargue de inicializar la descripcion de la construccion.
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="P:Full_GRASP_And_SOLID.Library.Building.Description">
+            <summary>
+            Se crea la propiedad Description para que se encargue de conocer la descripcion de la construccion.
+            </summary>
+            <value></value>
+        </member>
+        <member name="M:Full_GRASP_And_SOLID.Library.Building.AddTask(Full_GRASP_And_SOLID.Library.Task)">
+            <summary>
+             Se crea el metodo addTask para que se encargue de agregar una tarea a la construccion.
+            </summary>
+            <param name="task"></param>
+        </member>
+        <member name="M:Full_GRASP_And_SOLID.Library.Building.RemoveTask(Full_GRASP_And_SOLID.Library.Task)">
+            <summary>
+             Se crea el metodo removeTask para que se encargue de eliminar una tarea de la construccion.
+            </summary>
+            <param name="task"></param>
+        </member>
+        <member name="M:Full_GRASP_And_SOLID.Library.Building.GetProductionCost">
+            <summary>
+            Se crea el metodo GetProductionCost para que se encargue de calcular el costo de produccion de la construccion.
+            </summary>
+            //se utiliza el patron expert para que la clase Building sea la encargada de calcular el costo de produccion ya que es la clase experta en conocer los detalles de la construccion
+        </member>
+        <member name="M:Full_GRASP_And_SOLID.Library.Building.PrintBuilding">
+            <summary>
+            Se utiliza el patron expert para que la clase Building sea la encargada de imprimir la receta ya que es la clase experta en conocer los detalles de la construccion
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Full_GRASP_And_SOLID.Library.ConsolePrinter">
+            <summary>
+            Se crea la clase ConsolePrinter para que se encargue de imprimir en consola esto es para cumplir con el principio SRP.
+            </summary>
+        </member>
+        <member name="M:Full_GRASP_And_SOLID.Library.ConsolePrinter.PrintBuilding(Full_GRASP_And_SOLID.Library.Building)">
+            <summary>
+            Se crea el metodo PrintBuilding para que se encargue de imprimir en consola la receta de la construccion.
+            </summary>
+            <param name="building"></param>
+        </member>
+        <member name="T:Full_GRASP_And_SOLID.Library.Supply">
+            <summary>
+             Se crea la clase Supply para que se encargue de almacenar la descripcion y el costo unitario de un producto.
+            </summary>
+        </member>
+        <member name="M:Full_GRASP_And_SOLID.Library.Supply.#ctor(System.String,System.Double)">
+            <summary>
+            Se crea el constructor para que se encargue de inicializar la descripcion y el costo unitario de un producto.
+            </summary>
+            <param name="description"></param>
+            <param name="unitCost"></param>
+        </member>
+        <member name="P:Full_GRASP_And_SOLID.Library.Supply.Description">
+            <summary>
+            Se crea la propiedad Description para que se encargue de conocer la descripcion de un producto.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Full_GRASP_And_SOLID.Library.Supply.UnitCost">
+            <summary>
+            Se crea la propiedad UnitCost para que se encargue de conocer el costo unitario de un producto.
+            </summary>
+        </member>
+        <member name="T:Full_GRASP_And_SOLID.Library.Task">
+            <summary>
+            
+            </summary>
+        </member>
     </members>
 </doc>

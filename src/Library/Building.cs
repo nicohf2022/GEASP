@@ -9,28 +9,48 @@ using System.Collections;
 
 namespace Full_GRASP_And_SOLID.Library
 {
+    /// <summary>
+    ///  Se crea la clase Building para que se encargue de conocer los detalles de la construccion y se cumpla con el principio SRP.
+    /// </summary>
     public class Building
     {
         private ArrayList tasks = new ArrayList();
-
+        /// <summary>
+        /// Se crea el constructor para que se encargue de inicializar la descripcion de la construccion.
+        /// </summary>
+        /// <param name="name"></param>
         public Building(string name)
         {
             this.Description = name;
         }
 
+        /// <summary>
+        /// Se crea la propiedad Description para que se encargue de conocer la descripcion de la construccion.
+        /// </summary>
+        /// <value></value>
         public string Description { get; set; }
 
+        /// <summary>
+        ///  Se crea el metodo addTask para que se encargue de agregar una tarea a la construccion.
+        /// </summary>
+        /// <param name="task"></param>
         public void AddTask(Task task)
         {
             this.tasks.Add(task);
         }
 
+        /// <summary>
+        ///  Se crea el metodo removeTask para que se encargue de eliminar una tarea de la construccion.
+        /// </summary>
+        /// <param name="task"></param>
         public void RemoveTask(Task task)
         {
             this.tasks.Remove(task);
         }
-
-        //se utiliza el patron expert para que la clase Building sea la encargada de calcular el costo de produccion ya que es la clase experta en conocer los detalles de la construccion
+        /// <summary>
+        /// Se crea el metodo GetProductionCost para que se encargue de calcular el costo de produccion de la construccion.
+        /// </summary>
+        /// //se utiliza el patron expert para que la clase Building sea la encargada de calcular el costo de produccion ya que es la clase experta en conocer los detalles de la construccion
         public double GetProductionCost()
         {
             double total = 0;
@@ -40,7 +60,10 @@ namespace Full_GRASP_And_SOLID.Library
             }
             return total;
         }
-        
+        /// <summary>
+        /// Se utiliza el patron expert para que la clase Building sea la encargada de imprimir la receta ya que es la clase experta en conocer los detalles de la construccion
+        /// </summary>
+        /// <returns></returns>
         public string PrintBuilding()
         {
              string printBuilding = "";
