@@ -6,6 +6,9 @@
 
 namespace Full_GRASP_And_SOLID.Library
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Task
     {
         public Task(Supply material, double quantity, Tool equipment, int time)

@@ -6,6 +6,7 @@
 
 namespace Full_GRASP_And_SOLID.Library
 {
+    
     public class Tool
     {
         public Tool(string description, double hourlyCost)
