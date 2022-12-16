@@ -34,9 +34,12 @@ namespace Full_GRASP_And_SOLID.Library
         ///  Se crea el metodo addTask para que se encargue de agregar una tarea a la construccion.
         /// </summary>
         /// <param name="task"></param>
-        public void AddTask(Task task)
+        //patron creator ya que la clase Building es la encargada de crear la tarea y agregarla a la lista de tareas.
+        public void AddTask(Supply material, double quantity, Tool equipment, int time)
         {
+            Task task = new Task(material, quantity, equipment, time);
             this.tasks.Add(task);
+
         }
 
         /// <summary>
