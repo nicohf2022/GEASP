@@ -50,7 +50,7 @@
             Se crea la clase ConsolePrinter para que se encargue de imprimir en consola esto es para cumplir con el principio SRP.
             </summary>
         </member>
-        <member name="M:Full_GRASP_And_SOLID.Library.ConsolePrinter.PrintBuilding(Full_GRASP_And_SOLID.Library.Building)">
+        <member name="M:Full_GRASP_And_SOLID.Library.ConsolePrinter.PrintBuilding(Full_GRASP_And_SOLID.Library.IConvertToString)">
             <summary>
             Se crea el metodo PrintBuilding para que se encargue de imprimir en consola la receta de la construccion.
             </summary>

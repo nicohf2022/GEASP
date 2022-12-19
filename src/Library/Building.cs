@@ -12,7 +12,7 @@ namespace Full_GRASP_And_SOLID.Library
     /// <summary>
     ///  Se crea la clase Building para que se encargue de conocer los detalles de la construccion y se cumpla con el principio SRP.
     /// </summary>
-    public class Building
+    public class Building: IConvertToString
     {
         private ArrayList tasks = new ArrayList();
         /// <summary>
