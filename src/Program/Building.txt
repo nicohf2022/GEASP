@@ -1,4 +1,4 @@
-Edificio Tower: 
+Edificio Torre Eiffel: 
 - 100 de Cemento + 120 horas de Hormigonera 
 - 200 de Arena + 120 horas de Hormigonera 
 - 50 de Tabla + 15 horas de Martillo 

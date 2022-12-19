@@ -5,8 +5,7 @@ using System.IO;
 
 namespace Full_GRASP_And_SOLID.Library;
 
-
-public interface IPrinter
+public interface IConvertToString
 {
-   public void PrintBuilding(IConvertToString convertToString);
+    public string PrintBuilding();
 }

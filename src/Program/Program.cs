@@ -20,14 +20,16 @@ namespace Full_GRASP_And_SOLID
         public static void Main(string[] args)
         {
             PopulateCatalogs();
+            
             ConsolePrinter consolePrinter = new ConsolePrinter();
             FilePrinter filePrinter = new FilePrinter();
-            Building tower = new Building("Tower");
-            tower.AddTask(GetProduct("Cemento"), 100, GetEquipment("Hormigonera"), 120);
-            tower.AddTask(GetProduct("Arena"), 200, GetEquipment("Hormigonera"), 120);
-            tower.AddTask(GetProduct("Tabla"), 50, GetEquipment("Martillo"), 15);
-            consolePrinter.PrintBuilding(tower);
-            filePrinter.PrintBuilding(tower);
+            IConvertToString tower = new Building("Torre Eiffel");
+            Building tower2 = new Building("Torre Eiffel");
+            tower2 .AddTask(GetProduct("Cemento"), 100, GetEquipment("Hormigonera"), 120);
+            tower2.AddTask(GetProduct("Arena"), 200, GetEquipment("Hormigonera"), 120);
+            tower2.AddTask(GetProduct("Tabla"), 50, GetEquipment("Martillo"), 15);
+           
+            consolePrinter.PrintBuilding(tower2);
         }
 
         private static void PopulateCatalogs()
