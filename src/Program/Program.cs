@@ -21,6 +21,7 @@ namespace Full_GRASP_And_SOLID
         {
             PopulateCatalogs();
             
+            
             ConsolePrinter consolePrinter = new ConsolePrinter();
             FilePrinter filePrinter = new FilePrinter();
             IConvertToString tower = new Building("Torre Eiffel");
@@ -28,7 +29,7 @@ namespace Full_GRASP_And_SOLID
             tower2 .AddTask(GetProduct("Cemento"), 100, GetEquipment("Hormigonera"), 120);
             tower2.AddTask(GetProduct("Arena"), 200, GetEquipment("Hormigonera"), 120);
             tower2.AddTask(GetProduct("Tabla"), 50, GetEquipment("Martillo"), 15);
-           
+
             consolePrinter.PrintBuilding(tower2);
         }
 
